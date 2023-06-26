@@ -1,0 +1,32 @@
+function shout (string) {
+    return string.toUpperCase();
+}
+
+function whisper (string) {
+    return string.toLowerCase();
+}
+
+function logShout(string){
+    return console.log(shout(string));
+}
+
+function logWhisper(string) {
+    return console.log(whisper(string));
+}
+
+function sayHiToHeadphonedRoommate(string){
+    let test = string;
+
+    if (test === whisper(string)){
+        return "I can't hear you!";
+    }
+
+    if (test === shout(string)){
+        return "YES INDEED!";
+    }
+
+    if (string === "Let's have dinner together!") {
+        return "I would love to!";
+    }
+}
+
